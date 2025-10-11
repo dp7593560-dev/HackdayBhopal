@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newton's First Law Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Newton's First Law of Motion</h1>
+  <p>The ball will keep moving until it hits the wall, you jump, stop, or reset it.</p>
+
+  <div class="container">
+    <div id="ball"></div>
+  </div>
+
+  <div class="controls">
+    <button id="stopBtn">Apply Force (Jump)</button>
+    <button id="resetBtn">Reset</button>
+    <button id="externalForceBtn">External Force (Stop Ball)</button>
+  </div>
+
+  <div class="slider-section">
+    <label for="forceRange">Jump Force:</label>
+    <input type="range" id="forceRange" min="5" max="20" value="10" />
+    <span id="forceValue">10</span>
+  </div>
+
+  <div class="slider-section">
+    <label for="externalForceRange">External Force:</label>
+    <input type="range" id="externalForceRange" min="1" max="20" value="10" />
+    <span id="externalForceValue">10</span>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="Newton.js"></script>
+</body>
+</html>
